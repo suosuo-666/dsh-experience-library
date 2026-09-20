@@ -2,7 +2,7 @@
 name: dsh-github-reuse
 description: Reuse an existing open-source project instead of writing it from scratch — search GitHub, vet the candidate, decide the integration tier, and record where the code came from. Use this skill whenever a task needs a capability that probably already exists (a parser, a client, a CLI, a data format, a protocol, a UI component), whenever the user says to look for an existing project or to borrow one, whenever you are about to write more than a screenful of utility code, and whenever downloaded or vendored code needs a license check or a provenance note.
 metadata:
-  version: "0.1.0"
+  version: "0.1.1"
 user-invocable: true
 ---
 

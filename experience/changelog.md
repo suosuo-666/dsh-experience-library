@@ -4,6 +4,24 @@ Newest first. One entry per change, with the date and why. This is the audit tra
 store itself: when a card is corrected or retired, the reason belongs here so a future reader
 can tell a deliberate revision from a drift.
 
+## 2026-09-21 — v0.1.1, first release fix
+
+Found by testing the published artifact the way a stranger would: clone it and run the first
+command the README suggests.
+
+- **`selftest` reported failures on an empty store** — which is the state this repository ships
+  in. The search-argument probes borrowed their sample card from the real store, and with no
+  cards there was nothing to borrow, so three probes failed and a brand-new user's first command
+  said the tool was broken. They now build their own fixture store and drive `cmdSearch` against
+  it. Verified on a fresh copy: `0/0 passed, 6 skipped` for the card-specific probes (honest —
+  those cards are not here) and 10 probes actually exercised and passing.
+- **Added `a body-only term is still found`** as a permanent probe. The earlier fix — scoring
+  against the whole card body rather than only `Summary`/`Detail` — had no regression guard, and
+  it was the bug that made a card invisible to the query that needed it.
+- Released at `metadata.version: "0.1.0"` in both skills; this fix ships as the first patch.
+  Note for anyone editing frontmatter: `metadata.version` is the only version field the skill
+  loader reads, and `license`/`compatibility`/`allowed-tools` are discarded silently.
+
 ## 2026-09-21 — v0.1.0, published
 
 - Store, schema, tool and both skills packaged and released. The store ships **empty** on

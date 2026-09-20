@@ -2,7 +2,7 @@
 name: dsh-experience-study
 description: Read from and write to the DSH experience library — a curated store of verified facts, pitfalls, and workflows about this harness and this machine. Use this skill at the start of any non-trivial task, whenever work needs more than a couple of tool calls, whenever you are about to search the web or the filesystem for how something works here, whenever you catch yourself re-deriving something you may have derived before, and at the end of a task to record what was learned. Load it before acting on harness mechanics, environment quirks, or a workflow you may have already solved once.
 metadata:
-  version: "0.1.0"
+  version: "0.1.1"
 user-invocable: true
 ---
 

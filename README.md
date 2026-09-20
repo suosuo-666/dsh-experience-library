@@ -6,8 +6,8 @@ workflows about one harness and one machine, kept so that a solved problem stays
 Two skills operate it, one tool maintains it, and the store is plain Markdown.
 
 ```
-skills/dsh-experience-study/      read from, and write to, the library  (v0.1.0)
-skills/dsh-github-reuse/          reuse an existing project instead of writing it (v0.1.0)
+skills/dsh-experience-study/      read from, and write to, the library  (v0.1.1)
+skills/dsh-github-reuse/          reuse an existing project instead of writing it (v0.1.1)
 experience/                       the store itself: schema, tool, template, cards
 examples/                         two real cards, redacted, as the quality bar
 ```

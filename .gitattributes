@@ -1,0 +1,9 @@
+# The store holds LF files and has no .gitattributes of its own; without this, a checkout on a
+# machine with core.autocrlf=true rewrites every card and every .mjs to CRLF on disk while
+# `git status` stays clean — invisible, until the bytes differ from what was published.
+* text=auto eol=lf
+
+# Markdown cards are diffed by humans; keep them readable in review.
+*.md text eol=lf
+*.mjs text eol=lf
+*.json text eol=lf
